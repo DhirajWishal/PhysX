@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\physx\compiler\vc16win64\CMakeFiles\7400b9b7eeedf4b18eb46f80a82ee995\generate.stamp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{1E7CA07F-F824-396C-A453-E5F7D5CBECB8}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

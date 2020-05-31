@@ -33,6 +33,7 @@
 
 #include <algorithm>
 #include <typeinfo>
+#include <map>
 
 #include "D3D11RendererTraits.h"
 #include "D3D11RendererMemoryMacros.h"

@@ -1,0 +1,266 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="debug|x64">
+      <Configuration>debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="checked|x64">
+      <Configuration>checked</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="profile|x64">
+      <Configuration>profile</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="release|x64">
+      <Configuration>release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{15FBDFE4-5EEC-34D5-84EF-11518F69EC9F}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.17134.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>ALL_BUILD</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='checked|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='profile|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='debug|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='checked|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='profile|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='release|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='checked|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='profile|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\physx\source\compiler\cmake\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='debug|x64'">Building Custom Rule E:/Projects/Dynamik Engine/Versions/DynamikEngine/Dependencies/Libraries/External/PhysX/physx/source/compiler/cmake/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='debug|x64'">setlocal
+"E:\Programming\Modules and Runtime\CMake\bin\cmake.exe" "-SE:/Projects/Dynamik Engine/Versions/DynamikEngine/Dependencies/Libraries/External/PhysX/physx/compiler/public" "-BE:/Projects/Dynamik Engine/Versions/DynamikEngine/Dependencies/Libraries/External/PhysX/physx/compiler/vc16win64" --check-stamp-file "E:/Projects/Dynamik Engine/Versions/DynamikEngine/Dependencies/Libraries/External/PhysX/physx/compiler/vc16win64/sdk_source_bin/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='debug|x64'">E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\externals\cmakemodules\GetCompilerAndPlatform.cmake;E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\externals\cmakemodules\NvidiaBuildOptions.cmake;E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\externals\cmakemodules\SetOutputPaths.cmake;E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\externals\cmakemodules\template\PxIncludeTemplate.h;E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\physx\source\compiler\cmake\FastXml.cmake;E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\physx\source\compiler\cmake\LowLevel.cmake;E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\physx\source\compiler\cmake\LowLevelAABB.cmake;E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\physx\source\compiler\cmake\LowLevelDynamics.cmake;E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\physx\source\compiler\cmake\PhysX.cmake;E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\physx\source\compiler\cmake\PhysXCharacterKinematic.cmake;E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\physx\source\compiler\cmake\PhysXCommon.cmake;E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\physx\source\compiler\cmake\PhysXCooking.cmake;E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\physx\source\compiler\cmake\PhysXExtensions.cmake;E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\physx\source\compiler\cmake\PhysXFoundation.cmake;E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\physx\source\compiler\cmake\PhysXPvdSDK.cmake;E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\physx\source\compiler\cmake\PhysXTask.cmake;E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\physx\source\compiler\cmake\PhysXVehicle.cmake;E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\physx\source\compiler\cmake\SceneQuery.cmake;E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\physx\source\compiler\cmake\SimulationController.cmake;E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\physx\source\compiler\cmake\windows\CMakeLists.txt;E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\physx\source\compiler\cmake\windows\FastXml.cmake;E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\physx\source\compiler\cmake\windows\LowLevel.cmake;E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\physx\source\compiler\cmake\windows\LowLevelAABB.cmake;E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\physx\source\compiler\cmake\windows\LowLevelDynamics.cmake;E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\physx\source\compiler\cmake\windows\PhysX.cmake;E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\physx\source\compiler\cmake\windows\PhysXCharacterKinematic.cmake;E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\physx\source\compiler\cmake\windows\PhysXCommon.cmake;E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\physx\source\compiler\cmake\windows\PhysXCooking.cmake;E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\physx\source\compiler\cmake\windows\PhysXExtensions.cmake;E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\physx\source\compiler\cmake\windows\PhysXFoundation.cmake;E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\physx\source\compiler\cmake\windows\PhysXPvdSDK.cmake;E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\physx\source\compiler\cmake\windows\PhysXTask.cmake;E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\physx\source\compiler\cmake\windows\PhysXVehicle.cmake;E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\physx\source\compiler\cmake\windows\SceneQuery.cmake;E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\physx\source\compiler\cmake\windows\SimulationController.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='debug|x64'">E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\physx\compiler\vc16win64\sdk_source_bin\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='checked|x64'">Building Custom Rule E:/Projects/Dynamik Engine/Versions/DynamikEngine/Dependencies/Libraries/External/PhysX/physx/source/compiler/cmake/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='checked|x64'">setlocal
+"E:\Programming\Modules and Runtime\CMake\bin\cmake.exe" "-SE:/Projects/Dynamik Engine/Versions/DynamikEngine/Dependencies/Libraries/External/PhysX/physx/compiler/public" "-BE:/Projects/Dynamik Engine/Versions/DynamikEngine/Dependencies/Libraries/External/PhysX/physx/compiler/vc16win64" --check-stamp-file "E:/Projects/Dynamik Engine/Versions/DynamikEngine/Dependencies/Libraries/External/PhysX/physx/compiler/vc16win64/sdk_source_bin/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='checked|x64'">E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\externals\cmakemodules\GetCompilerAndPlatform.cmake;E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\externals\cmakemodules\NvidiaBuildOptions.cmake;E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\externals\cmakemodules\SetOutputPaths.cmake;E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\externals\cmakemodules\template\PxIncludeTemplate.h;E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\physx\source\compiler\cmake\FastXml.cmake;E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\physx\source\compiler\cmake\LowLevel.cmake;E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\physx\source\compiler\cmake\LowLevelAABB.cmake;E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\physx\source\compiler\cmake\LowLevelDynamics.cmake;E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\physx\source\compiler\cmake\PhysX.cmake;E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\physx\source\compiler\cmake\PhysXCharacterKinematic.cmake;E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\physx\source\compiler\cmake\PhysXCommon.cmake;E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\physx\source\compiler\cmake\PhysXCooking.cmake;E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\physx\source\compiler\cmake\PhysXExtensions.cmake;E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\physx\source\compiler\cmake\PhysXFoundation.cmake;E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\physx\source\compiler\cmake\PhysXPvdSDK.cmake;E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\physx\source\compiler\cmake\PhysXTask.cmake;E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\physx\source\compiler\cmake\PhysXVehicle.cmake;E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\physx\source\compiler\cmake\SceneQuery.cmake;E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\physx\source\compiler\cmake\SimulationController.cmake;E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\physx\source\compiler\cmake\windows\CMakeLists.txt;E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\physx\source\compiler\cmake\windows\FastXml.cmake;E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\physx\source\compiler\cmake\windows\LowLevel.cmake;E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\physx\source\compiler\cmake\windows\LowLevelAABB.cmake;E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\physx\source\compiler\cmake\windows\LowLevelDynamics.cmake;E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\physx\source\compiler\cmake\windows\PhysX.cmake;E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\physx\source\compiler\cmake\windows\PhysXCharacterKinematic.cmake;E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\physx\source\compiler\cmake\windows\PhysXCommon.cmake;E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\physx\source\compiler\cmake\windows\PhysXCooking.cmake;E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\physx\source\compiler\cmake\windows\PhysXExtensions.cmake;E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\physx\source\compiler\cmake\windows\PhysXFoundation.cmake;E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\physx\source\compiler\cmake\windows\PhysXPvdSDK.cmake;E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\physx\source\compiler\cmake\windows\PhysXTask.cmake;E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\physx\source\compiler\cmake\windows\PhysXVehicle.cmake;E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\physx\source\compiler\cmake\windows\SceneQuery.cmake;E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\physx\source\compiler\cmake\windows\SimulationController.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='checked|x64'">E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\physx\compiler\vc16win64\sdk_source_bin\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='checked|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='profile|x64'">Building Custom Rule E:/Projects/Dynamik Engine/Versions/DynamikEngine/Dependencies/Libraries/External/PhysX/physx/source/compiler/cmake/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='profile|x64'">setlocal
+"E:\Programming\Modules and Runtime\CMake\bin\cmake.exe" "-SE:/Projects/Dynamik Engine/Versions/DynamikEngine/Dependencies/Libraries/External/PhysX/physx/compiler/public" "-BE:/Projects/Dynamik Engine/Versions/DynamikEngine/Dependencies/Libraries/External/PhysX/physx/compiler/vc16win64" --check-stamp-file "E:/Projects/Dynamik Engine/Versions/DynamikEngine/Dependencies/Libraries/External/PhysX/physx/compiler/vc16win64/sdk_source_bin/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='profile|x64'">E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\externals\cmakemodules\GetCompilerAndPlatform.cmake;E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\externals\cmakemodules\NvidiaBuildOptions.cmake;E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\externals\cmakemodules\SetOutputPaths.cmake;E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\externals\cmakemodules\template\PxIncludeTemplate.h;E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\physx\source\compiler\cmake\FastXml.cmake;E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\physx\source\compiler\cmake\LowLevel.cmake;E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\physx\source\compiler\cmake\LowLevelAABB.cmake;E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\physx\source\compiler\cmake\LowLevelDynamics.cmake;E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\physx\source\compiler\cmake\PhysX.cmake;E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\physx\source\compiler\cmake\PhysXCharacterKinematic.cmake;E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\physx\source\compiler\cmake\PhysXCommon.cmake;E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\physx\source\compiler\cmake\PhysXCooking.cmake;E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\physx\source\compiler\cmake\PhysXExtensions.cmake;E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\physx\source\compiler\cmake\PhysXFoundation.cmake;E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\physx\source\compiler\cmake\PhysXPvdSDK.cmake;E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\physx\source\compiler\cmake\PhysXTask.cmake;E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\physx\source\compiler\cmake\PhysXVehicle.cmake;E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\physx\source\compiler\cmake\SceneQuery.cmake;E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\physx\source\compiler\cmake\SimulationController.cmake;E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\physx\source\compiler\cmake\windows\CMakeLists.txt;E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\physx\source\compiler\cmake\windows\FastXml.cmake;E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\physx\source\compiler\cmake\windows\LowLevel.cmake;E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\physx\source\compiler\cmake\windows\LowLevelAABB.cmake;E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\physx\source\compiler\cmake\windows\LowLevelDynamics.cmake;E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\physx\source\compiler\cmake\windows\PhysX.cmake;E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\physx\source\compiler\cmake\windows\PhysXCharacterKinematic.cmake;E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\physx\source\compiler\cmake\windows\PhysXCommon.cmake;E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\physx\source\compiler\cmake\windows\PhysXCooking.cmake;E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\physx\source\compiler\cmake\windows\PhysXExtensions.cmake;E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\physx\source\compiler\cmake\windows\PhysXFoundation.cmake;E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\physx\source\compiler\cmake\windows\PhysXPvdSDK.cmake;E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\physx\source\compiler\cmake\windows\PhysXTask.cmake;E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\physx\source\compiler\cmake\windows\PhysXVehicle.cmake;E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\physx\source\compiler\cmake\windows\SceneQuery.cmake;E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\physx\source\compiler\cmake\windows\SimulationController.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='profile|x64'">E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\physx\compiler\vc16win64\sdk_source_bin\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='profile|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='release|x64'">Building Custom Rule E:/Projects/Dynamik Engine/Versions/DynamikEngine/Dependencies/Libraries/External/PhysX/physx/source/compiler/cmake/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='release|x64'">setlocal
+"E:\Programming\Modules and Runtime\CMake\bin\cmake.exe" "-SE:/Projects/Dynamik Engine/Versions/DynamikEngine/Dependencies/Libraries/External/PhysX/physx/compiler/public" "-BE:/Projects/Dynamik Engine/Versions/DynamikEngine/Dependencies/Libraries/External/PhysX/physx/compiler/vc16win64" --check-stamp-file "E:/Projects/Dynamik Engine/Versions/DynamikEngine/Dependencies/Libraries/External/PhysX/physx/compiler/vc16win64/sdk_source_bin/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='release|x64'">E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\externals\cmakemodules\GetCompilerAndPlatform.cmake;E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\externals\cmakemodules\NvidiaBuildOptions.cmake;E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\externals\cmakemodules\SetOutputPaths.cmake;E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\externals\cmakemodules\template\PxIncludeTemplate.h;E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\physx\source\compiler\cmake\FastXml.cmake;E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\physx\source\compiler\cmake\LowLevel.cmake;E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\physx\source\compiler\cmake\LowLevelAABB.cmake;E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\physx\source\compiler\cmake\LowLevelDynamics.cmake;E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\physx\source\compiler\cmake\PhysX.cmake;E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\physx\source\compiler\cmake\PhysXCharacterKinematic.cmake;E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\physx\source\compiler\cmake\PhysXCommon.cmake;E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\physx\source\compiler\cmake\PhysXCooking.cmake;E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\physx\source\compiler\cmake\PhysXExtensions.cmake;E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\physx\source\compiler\cmake\PhysXFoundation.cmake;E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\physx\source\compiler\cmake\PhysXPvdSDK.cmake;E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\physx\source\compiler\cmake\PhysXTask.cmake;E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\physx\source\compiler\cmake\PhysXVehicle.cmake;E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\physx\source\compiler\cmake\SceneQuery.cmake;E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\physx\source\compiler\cmake\SimulationController.cmake;E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\physx\source\compiler\cmake\windows\CMakeLists.txt;E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\physx\source\compiler\cmake\windows\FastXml.cmake;E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\physx\source\compiler\cmake\windows\LowLevel.cmake;E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\physx\source\compiler\cmake\windows\LowLevelAABB.cmake;E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\physx\source\compiler\cmake\windows\LowLevelDynamics.cmake;E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\physx\source\compiler\cmake\windows\PhysX.cmake;E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\physx\source\compiler\cmake\windows\PhysXCharacterKinematic.cmake;E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\physx\source\compiler\cmake\windows\PhysXCommon.cmake;E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\physx\source\compiler\cmake\windows\PhysXCooking.cmake;E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\physx\source\compiler\cmake\windows\PhysXExtensions.cmake;E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\physx\source\compiler\cmake\windows\PhysXFoundation.cmake;E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\physx\source\compiler\cmake\windows\PhysXPvdSDK.cmake;E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\physx\source\compiler\cmake\windows\PhysXTask.cmake;E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\physx\source\compiler\cmake\windows\PhysXVehicle.cmake;E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\physx\source\compiler\cmake\windows\SceneQuery.cmake;E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\physx\source\compiler\cmake\windows\SimulationController.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='release|x64'">E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\physx\compiler\vc16win64\sdk_source_bin\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='release|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\physx\compiler\vc16win64\ZERO_CHECK.vcxproj">
+      <Project>{43BCC4AC-9FB7-31DF-897E-622487BABF68}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\physx\compiler\vc16win64\sdk_source_bin\FastXml.vcxproj">
+      <Project>{55245FF2-6214-3697-8EE2-64ED799E86DE}</Project>
+      <Name>FastXml</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\physx\compiler\vc16win64\sdk_source_bin\LowLevel.vcxproj">
+      <Project>{0E2BDDFF-7D20-3A21-88CC-3341676D84C0}</Project>
+      <Name>LowLevel</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\physx\compiler\vc16win64\sdk_source_bin\LowLevelAABB.vcxproj">
+      <Project>{3D5D434F-86A3-34A5-AF01-96880828E99C}</Project>
+      <Name>LowLevelAABB</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\physx\compiler\vc16win64\sdk_source_bin\LowLevelDynamics.vcxproj">
+      <Project>{D9FBC901-AF60-3C2C-946E-52D5AB425E33}</Project>
+      <Name>LowLevelDynamics</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\physx\compiler\vc16win64\sdk_source_bin\PhysX.vcxproj">
+      <Project>{3C1490EE-C72C-31DB-8306-0604593C9207}</Project>
+      <Name>PhysX</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\physx\compiler\vc16win64\sdk_source_bin\PhysXCharacterKinematic.vcxproj">
+      <Project>{FB97ADB5-D68B-342A-9CFA-367C71E2584A}</Project>
+      <Name>PhysXCharacterKinematic</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\physx\compiler\vc16win64\sdk_source_bin\PhysXCommon.vcxproj">
+      <Project>{B9852F41-63F0-3AC8-AC7F-2F71599FE78A}</Project>
+      <Name>PhysXCommon</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\physx\compiler\vc16win64\sdk_source_bin\PhysXCooking.vcxproj">
+      <Project>{A0940FEE-4199-3EFB-9C1C-33CCF499CC6C}</Project>
+      <Name>PhysXCooking</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\physx\compiler\vc16win64\sdk_source_bin\PhysXExtensions.vcxproj">
+      <Project>{7C7B66EF-47B6-3BDA-A4A5-A01410AFCE85}</Project>
+      <Name>PhysXExtensions</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\physx\compiler\vc16win64\sdk_source_bin\PhysXFoundation.vcxproj">
+      <Project>{F6EE13E1-895A-3C17-BE4F-B8AE8CF6EF6E}</Project>
+      <Name>PhysXFoundation</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\physx\compiler\vc16win64\sdk_source_bin\PhysXPvdSDK.vcxproj">
+      <Project>{DAACA102-0CE9-3582-9B55-0C4731C8252A}</Project>
+      <Name>PhysXPvdSDK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\physx\compiler\vc16win64\sdk_source_bin\PhysXTask.vcxproj">
+      <Project>{C67593DA-8BDD-3B3A-8ABC-998B07B0C464}</Project>
+      <Name>PhysXTask</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\physx\compiler\vc16win64\sdk_source_bin\PhysXVehicle.vcxproj">
+      <Project>{C3FD0598-706C-3F58-B50C-196CE4BF15FE}</Project>
+      <Name>PhysXVehicle</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\physx\compiler\vc16win64\sdk_source_bin\SceneQuery.vcxproj">
+      <Project>{E32A05AA-E938-3A27-84C6-F5A960D41428}</Project>
+      <Name>SceneQuery</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\physx\compiler\vc16win64\sdk_source_bin\SimulationController.vcxproj">
+      <Project>{04C28D17-08CD-33C7-9E81-47BBF685812F}</Project>
+      <Name>SimulationController</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

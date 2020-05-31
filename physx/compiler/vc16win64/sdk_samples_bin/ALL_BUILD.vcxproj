@@ -1,0 +1,212 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="debug|x64">
+      <Configuration>debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="checked|x64">
+      <Configuration>checked</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="profile|x64">
+      <Configuration>profile</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="release|x64">
+      <Configuration>release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{15FBDFE4-5EEC-34D5-84EF-11518F69EC9F}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.17134.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>ALL_BUILD</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='checked|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='profile|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='debug|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='checked|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='profile|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='release|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='checked|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='profile|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\physx\samples\compiler\cmake\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='debug|x64'">Building Custom Rule E:/Projects/Dynamik Engine/Versions/DynamikEngine/Dependencies/Libraries/External/PhysX/physx/samples/compiler/cmake/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='debug|x64'">setlocal
+"E:\Programming\Modules and Runtime\CMake\bin\cmake.exe" "-SE:/Projects/Dynamik Engine/Versions/DynamikEngine/Dependencies/Libraries/External/PhysX/physx/compiler/public" "-BE:/Projects/Dynamik Engine/Versions/DynamikEngine/Dependencies/Libraries/External/PhysX/physx/compiler/vc16win64" --check-stamp-file "E:/Projects/Dynamik Engine/Versions/DynamikEngine/Dependencies/Libraries/External/PhysX/physx/compiler/vc16win64/sdk_samples_bin/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='debug|x64'">E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\externals\cmakemodules\ConfigureFileMT.cmake;E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\externals\cmakemodules\GetCompilerAndPlatform.cmake;E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\externals\cmakemodules\NvidiaBuildOptions.cmake;E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\externals\cmakemodules\SetOutputPaths.cmake;E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\externals\targa\targa-config-version.cmake;E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\externals\targa\targa-config.cmake;E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\physx\samples\compiler\cmake\SampleBase.cmake;E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\physx\samples\compiler\cmake\SampleFramework.cmake;E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\physx\samples\compiler\cmake\SamplePlatform.cmake;E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\physx\samples\compiler\cmake\SampleRenderer.cmake;E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\physx\samples\compiler\cmake\Samples.cmake;E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\physx\samples\compiler\cmake\SamplesToolkit.cmake;E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\physx\samples\compiler\cmake\windows\CMakeLists.txt;E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\physx\samples\compiler\cmake\windows\SampleBase.cmake;E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\physx\samples\compiler\cmake\windows\SampleFramework.cmake;E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\physx\samples\compiler\cmake\windows\SamplePlatform.cmake;E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\physx\samples\compiler\cmake\windows\SampleRenderer.cmake;E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\physx\samples\compiler\cmake\windows\Samples.cmake;E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\physx\samples\compiler\cmake\windows\SamplesToolkit.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='debug|x64'">E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\physx\compiler\vc16win64\sdk_samples_bin\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='checked|x64'">Building Custom Rule E:/Projects/Dynamik Engine/Versions/DynamikEngine/Dependencies/Libraries/External/PhysX/physx/samples/compiler/cmake/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='checked|x64'">setlocal
+"E:\Programming\Modules and Runtime\CMake\bin\cmake.exe" "-SE:/Projects/Dynamik Engine/Versions/DynamikEngine/Dependencies/Libraries/External/PhysX/physx/compiler/public" "-BE:/Projects/Dynamik Engine/Versions/DynamikEngine/Dependencies/Libraries/External/PhysX/physx/compiler/vc16win64" --check-stamp-file "E:/Projects/Dynamik Engine/Versions/DynamikEngine/Dependencies/Libraries/External/PhysX/physx/compiler/vc16win64/sdk_samples_bin/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='checked|x64'">E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\externals\cmakemodules\ConfigureFileMT.cmake;E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\externals\cmakemodules\GetCompilerAndPlatform.cmake;E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\externals\cmakemodules\NvidiaBuildOptions.cmake;E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\externals\cmakemodules\SetOutputPaths.cmake;E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\externals\targa\targa-config-version.cmake;E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\externals\targa\targa-config.cmake;E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\physx\samples\compiler\cmake\SampleBase.cmake;E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\physx\samples\compiler\cmake\SampleFramework.cmake;E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\physx\samples\compiler\cmake\SamplePlatform.cmake;E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\physx\samples\compiler\cmake\SampleRenderer.cmake;E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\physx\samples\compiler\cmake\Samples.cmake;E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\physx\samples\compiler\cmake\SamplesToolkit.cmake;E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\physx\samples\compiler\cmake\windows\CMakeLists.txt;E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\physx\samples\compiler\cmake\windows\SampleBase.cmake;E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\physx\samples\compiler\cmake\windows\SampleFramework.cmake;E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\physx\samples\compiler\cmake\windows\SamplePlatform.cmake;E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\physx\samples\compiler\cmake\windows\SampleRenderer.cmake;E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\physx\samples\compiler\cmake\windows\Samples.cmake;E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\physx\samples\compiler\cmake\windows\SamplesToolkit.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='checked|x64'">E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\physx\compiler\vc16win64\sdk_samples_bin\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='checked|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='profile|x64'">Building Custom Rule E:/Projects/Dynamik Engine/Versions/DynamikEngine/Dependencies/Libraries/External/PhysX/physx/samples/compiler/cmake/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='profile|x64'">setlocal
+"E:\Programming\Modules and Runtime\CMake\bin\cmake.exe" "-SE:/Projects/Dynamik Engine/Versions/DynamikEngine/Dependencies/Libraries/External/PhysX/physx/compiler/public" "-BE:/Projects/Dynamik Engine/Versions/DynamikEngine/Dependencies/Libraries/External/PhysX/physx/compiler/vc16win64" --check-stamp-file "E:/Projects/Dynamik Engine/Versions/DynamikEngine/Dependencies/Libraries/External/PhysX/physx/compiler/vc16win64/sdk_samples_bin/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='profile|x64'">E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\externals\cmakemodules\ConfigureFileMT.cmake;E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\externals\cmakemodules\GetCompilerAndPlatform.cmake;E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\externals\cmakemodules\NvidiaBuildOptions.cmake;E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\externals\cmakemodules\SetOutputPaths.cmake;E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\externals\targa\targa-config-version.cmake;E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\externals\targa\targa-config.cmake;E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\physx\samples\compiler\cmake\SampleBase.cmake;E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\physx\samples\compiler\cmake\SampleFramework.cmake;E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\physx\samples\compiler\cmake\SamplePlatform.cmake;E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\physx\samples\compiler\cmake\SampleRenderer.cmake;E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\physx\samples\compiler\cmake\Samples.cmake;E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\physx\samples\compiler\cmake\SamplesToolkit.cmake;E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\physx\samples\compiler\cmake\windows\CMakeLists.txt;E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\physx\samples\compiler\cmake\windows\SampleBase.cmake;E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\physx\samples\compiler\cmake\windows\SampleFramework.cmake;E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\physx\samples\compiler\cmake\windows\SamplePlatform.cmake;E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\physx\samples\compiler\cmake\windows\SampleRenderer.cmake;E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\physx\samples\compiler\cmake\windows\Samples.cmake;E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\physx\samples\compiler\cmake\windows\SamplesToolkit.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='profile|x64'">E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\physx\compiler\vc16win64\sdk_samples_bin\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='profile|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='release|x64'">Building Custom Rule E:/Projects/Dynamik Engine/Versions/DynamikEngine/Dependencies/Libraries/External/PhysX/physx/samples/compiler/cmake/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='release|x64'">setlocal
+"E:\Programming\Modules and Runtime\CMake\bin\cmake.exe" "-SE:/Projects/Dynamik Engine/Versions/DynamikEngine/Dependencies/Libraries/External/PhysX/physx/compiler/public" "-BE:/Projects/Dynamik Engine/Versions/DynamikEngine/Dependencies/Libraries/External/PhysX/physx/compiler/vc16win64" --check-stamp-file "E:/Projects/Dynamik Engine/Versions/DynamikEngine/Dependencies/Libraries/External/PhysX/physx/compiler/vc16win64/sdk_samples_bin/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='release|x64'">E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\externals\cmakemodules\ConfigureFileMT.cmake;E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\externals\cmakemodules\GetCompilerAndPlatform.cmake;E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\externals\cmakemodules\NvidiaBuildOptions.cmake;E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\externals\cmakemodules\SetOutputPaths.cmake;E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\externals\targa\targa-config-version.cmake;E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\externals\targa\targa-config.cmake;E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\physx\samples\compiler\cmake\SampleBase.cmake;E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\physx\samples\compiler\cmake\SampleFramework.cmake;E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\physx\samples\compiler\cmake\SamplePlatform.cmake;E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\physx\samples\compiler\cmake\SampleRenderer.cmake;E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\physx\samples\compiler\cmake\Samples.cmake;E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\physx\samples\compiler\cmake\SamplesToolkit.cmake;E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\physx\samples\compiler\cmake\windows\CMakeLists.txt;E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\physx\samples\compiler\cmake\windows\SampleBase.cmake;E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\physx\samples\compiler\cmake\windows\SampleFramework.cmake;E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\physx\samples\compiler\cmake\windows\SamplePlatform.cmake;E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\physx\samples\compiler\cmake\windows\SampleRenderer.cmake;E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\physx\samples\compiler\cmake\windows\Samples.cmake;E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\physx\samples\compiler\cmake\windows\SamplesToolkit.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='release|x64'">E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\physx\compiler\vc16win64\sdk_samples_bin\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='release|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\physx\compiler\vc16win64\ZERO_CHECK.vcxproj">
+      <Project>{43BCC4AC-9FB7-31DF-897E-622487BABF68}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\physx\compiler\vc16win64\sdk_samples_bin\SampleBase.vcxproj">
+      <Project>{C56FC50B-982B-3438-9FC4-06A01F8E5136}</Project>
+      <Name>SampleBase</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\physx\compiler\vc16win64\sdk_samples_bin\SampleFramework.vcxproj">
+      <Project>{57BB2DDE-F156-36F2-830D-99BCB248FED3}</Project>
+      <Name>SampleFramework</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\physx\compiler\vc16win64\sdk_samples_bin\SamplePlatform.vcxproj">
+      <Project>{538A078A-A6EF-3D99-8B71-23F04DD8789F}</Project>
+      <Name>SamplePlatform</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\physx\compiler\vc16win64\sdk_samples_bin\SampleRenderer.vcxproj">
+      <Project>{F9ACEDFE-97DB-3932-B6A4-5D5C7B9474AB}</Project>
+      <Name>SampleRenderer</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\physx\compiler\vc16win64\sdk_samples_bin\SampleToolkit.vcxproj">
+      <Project>{AD7F54CF-D556-3808-90A6-859C5273E038}</Project>
+      <Name>SampleToolkit</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\physx\compiler\vc16win64\sdk_samples_bin\Samples.vcxproj">
+      <Project>{DFF03BF5-7AD1-3B08-9E17-9BC5015110B9}</Project>
+      <Name>Samples</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

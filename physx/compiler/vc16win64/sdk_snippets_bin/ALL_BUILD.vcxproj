@@ -1,0 +1,392 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="debug|x64">
+      <Configuration>debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="checked|x64">
+      <Configuration>checked</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="profile|x64">
+      <Configuration>profile</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="release|x64">
+      <Configuration>release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{15FBDFE4-5EEC-34D5-84EF-11518F69EC9F}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.17134.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>ALL_BUILD</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='checked|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='profile|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='debug|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='checked|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='profile|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='release|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='checked|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='profile|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\physx\snippets\compiler\cmake\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='debug|x64'">Building Custom Rule E:/Projects/Dynamik Engine/Versions/DynamikEngine/Dependencies/Libraries/External/PhysX/physx/snippets/compiler/cmake/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='debug|x64'">setlocal
+"E:\Programming\Modules and Runtime\CMake\bin\cmake.exe" "-SE:/Projects/Dynamik Engine/Versions/DynamikEngine/Dependencies/Libraries/External/PhysX/physx/compiler/public" "-BE:/Projects/Dynamik Engine/Versions/DynamikEngine/Dependencies/Libraries/External/PhysX/physx/compiler/vc16win64" --check-stamp-file "E:/Projects/Dynamik Engine/Versions/DynamikEngine/Dependencies/Libraries/External/PhysX/physx/compiler/vc16win64/sdk_snippets_bin/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='debug|x64'">E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\externals\cmakemodules\ConfigureFileMT.cmake;E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\externals\cmakemodules\GetCompilerAndPlatform.cmake;E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\externals\cmakemodules\NvidiaBuildOptions.cmake;E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\externals\cmakemodules\SetOutputPaths.cmake;E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\physx\snippets\compiler\cmake\SnippetRender.cmake;E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\physx\snippets\compiler\cmake\SnippetTemplate.cmake;E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\physx\snippets\compiler\cmake\SnippetUtils.cmake;E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\physx\snippets\compiler\cmake\SnippetVehicleTemplate.cmake;E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\physx\snippets\compiler\cmake\windows\CMakeLists.txt;E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\physx\snippets\compiler\cmake\windows\SnippetRender.cmake;E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\physx\snippets\compiler\cmake\windows\SnippetTemplate.cmake;E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\physx\snippets\compiler\cmake\windows\SnippetUtils.cmake;E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\physx\snippets\compiler\cmake\windows\SnippetVehicleTemplate.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='debug|x64'">E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\physx\compiler\vc16win64\sdk_snippets_bin\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='checked|x64'">Building Custom Rule E:/Projects/Dynamik Engine/Versions/DynamikEngine/Dependencies/Libraries/External/PhysX/physx/snippets/compiler/cmake/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='checked|x64'">setlocal
+"E:\Programming\Modules and Runtime\CMake\bin\cmake.exe" "-SE:/Projects/Dynamik Engine/Versions/DynamikEngine/Dependencies/Libraries/External/PhysX/physx/compiler/public" "-BE:/Projects/Dynamik Engine/Versions/DynamikEngine/Dependencies/Libraries/External/PhysX/physx/compiler/vc16win64" --check-stamp-file "E:/Projects/Dynamik Engine/Versions/DynamikEngine/Dependencies/Libraries/External/PhysX/physx/compiler/vc16win64/sdk_snippets_bin/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='checked|x64'">E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\externals\cmakemodules\ConfigureFileMT.cmake;E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\externals\cmakemodules\GetCompilerAndPlatform.cmake;E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\externals\cmakemodules\NvidiaBuildOptions.cmake;E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\externals\cmakemodules\SetOutputPaths.cmake;E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\physx\snippets\compiler\cmake\SnippetRender.cmake;E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\physx\snippets\compiler\cmake\SnippetTemplate.cmake;E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\physx\snippets\compiler\cmake\SnippetUtils.cmake;E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\physx\snippets\compiler\cmake\SnippetVehicleTemplate.cmake;E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\physx\snippets\compiler\cmake\windows\CMakeLists.txt;E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\physx\snippets\compiler\cmake\windows\SnippetRender.cmake;E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\physx\snippets\compiler\cmake\windows\SnippetTemplate.cmake;E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\physx\snippets\compiler\cmake\windows\SnippetUtils.cmake;E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\physx\snippets\compiler\cmake\windows\SnippetVehicleTemplate.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='checked|x64'">E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\physx\compiler\vc16win64\sdk_snippets_bin\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='checked|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='profile|x64'">Building Custom Rule E:/Projects/Dynamik Engine/Versions/DynamikEngine/Dependencies/Libraries/External/PhysX/physx/snippets/compiler/cmake/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='profile|x64'">setlocal
+"E:\Programming\Modules and Runtime\CMake\bin\cmake.exe" "-SE:/Projects/Dynamik Engine/Versions/DynamikEngine/Dependencies/Libraries/External/PhysX/physx/compiler/public" "-BE:/Projects/Dynamik Engine/Versions/DynamikEngine/Dependencies/Libraries/External/PhysX/physx/compiler/vc16win64" --check-stamp-file "E:/Projects/Dynamik Engine/Versions/DynamikEngine/Dependencies/Libraries/External/PhysX/physx/compiler/vc16win64/sdk_snippets_bin/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='profile|x64'">E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\externals\cmakemodules\ConfigureFileMT.cmake;E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\externals\cmakemodules\GetCompilerAndPlatform.cmake;E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\externals\cmakemodules\NvidiaBuildOptions.cmake;E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\externals\cmakemodules\SetOutputPaths.cmake;E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\physx\snippets\compiler\cmake\SnippetRender.cmake;E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\physx\snippets\compiler\cmake\SnippetTemplate.cmake;E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\physx\snippets\compiler\cmake\SnippetUtils.cmake;E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\physx\snippets\compiler\cmake\SnippetVehicleTemplate.cmake;E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\physx\snippets\compiler\cmake\windows\CMakeLists.txt;E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\physx\snippets\compiler\cmake\windows\SnippetRender.cmake;E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\physx\snippets\compiler\cmake\windows\SnippetTemplate.cmake;E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\physx\snippets\compiler\cmake\windows\SnippetUtils.cmake;E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\physx\snippets\compiler\cmake\windows\SnippetVehicleTemplate.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='profile|x64'">E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\physx\compiler\vc16win64\sdk_snippets_bin\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='profile|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='release|x64'">Building Custom Rule E:/Projects/Dynamik Engine/Versions/DynamikEngine/Dependencies/Libraries/External/PhysX/physx/snippets/compiler/cmake/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='release|x64'">setlocal
+"E:\Programming\Modules and Runtime\CMake\bin\cmake.exe" "-SE:/Projects/Dynamik Engine/Versions/DynamikEngine/Dependencies/Libraries/External/PhysX/physx/compiler/public" "-BE:/Projects/Dynamik Engine/Versions/DynamikEngine/Dependencies/Libraries/External/PhysX/physx/compiler/vc16win64" --check-stamp-file "E:/Projects/Dynamik Engine/Versions/DynamikEngine/Dependencies/Libraries/External/PhysX/physx/compiler/vc16win64/sdk_snippets_bin/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='release|x64'">E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\externals\cmakemodules\ConfigureFileMT.cmake;E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\externals\cmakemodules\GetCompilerAndPlatform.cmake;E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\externals\cmakemodules\NvidiaBuildOptions.cmake;E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\externals\cmakemodules\SetOutputPaths.cmake;E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\physx\snippets\compiler\cmake\SnippetRender.cmake;E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\physx\snippets\compiler\cmake\SnippetTemplate.cmake;E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\physx\snippets\compiler\cmake\SnippetUtils.cmake;E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\physx\snippets\compiler\cmake\SnippetVehicleTemplate.cmake;E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\physx\snippets\compiler\cmake\windows\CMakeLists.txt;E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\physx\snippets\compiler\cmake\windows\SnippetRender.cmake;E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\physx\snippets\compiler\cmake\windows\SnippetTemplate.cmake;E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\physx\snippets\compiler\cmake\windows\SnippetUtils.cmake;E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\physx\snippets\compiler\cmake\windows\SnippetVehicleTemplate.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='release|x64'">E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\physx\compiler\vc16win64\sdk_snippets_bin\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='release|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\physx\compiler\vc16win64\ZERO_CHECK.vcxproj">
+      <Project>{43BCC4AC-9FB7-31DF-897E-622487BABF68}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\physx\compiler\vc16win64\sdk_snippets_bin\SnippetArticulation.vcxproj">
+      <Project>{0C11B4A4-E157-308A-9425-5927AB1FC090}</Project>
+      <Name>SnippetArticulation</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\physx\compiler\vc16win64\sdk_snippets_bin\SnippetBVHStructure.vcxproj">
+      <Project>{4F2C5E84-FF61-3DA9-809A-396B9034A6FB}</Project>
+      <Name>SnippetBVHStructure</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\physx\compiler\vc16win64\sdk_snippets_bin\SnippetContactModification.vcxproj">
+      <Project>{E0E9A173-5997-3838-BBF5-56DE80773CFF}</Project>
+      <Name>SnippetContactModification</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\physx\compiler\vc16win64\sdk_snippets_bin\SnippetContactReport.vcxproj">
+      <Project>{7E9D7E0F-B4D2-3DEA-99F2-F576B62A042E}</Project>
+      <Name>SnippetContactReport</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\physx\compiler\vc16win64\sdk_snippets_bin\SnippetContactReportCCD.vcxproj">
+      <Project>{AEF0F86F-6A68-3ECF-AF03-A781845A063D}</Project>
+      <Name>SnippetContactReportCCD</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\physx\compiler\vc16win64\sdk_snippets_bin\SnippetConvert.vcxproj">
+      <Project>{3002B9FB-5C30-3F3E-B5AD-DFC8B36919EA}</Project>
+      <Name>SnippetConvert</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\physx\compiler\vc16win64\sdk_snippets_bin\SnippetConvexMeshCreate.vcxproj">
+      <Project>{2EC9BF9B-2E39-31B3-BD24-F8A4C2871B63}</Project>
+      <Name>SnippetConvexMeshCreate</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\physx\compiler\vc16win64\sdk_snippets_bin\SnippetCustomJoint.vcxproj">
+      <Project>{7EC20D0A-45B5-31C5-A2C3-8C43BFF3B648}</Project>
+      <Name>SnippetCustomJoint</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\physx\compiler\vc16win64\sdk_snippets_bin\SnippetCustomProfiler.vcxproj">
+      <Project>{923F45CD-1220-3EE2-BCE6-E8E32438F807}</Project>
+      <Name>SnippetCustomProfiler</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\physx\compiler\vc16win64\sdk_snippets_bin\SnippetDeformableMesh.vcxproj">
+      <Project>{FB336FC5-EC7F-3E63-875C-40745CA83F73}</Project>
+      <Name>SnippetDeformableMesh</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\physx\compiler\vc16win64\sdk_snippets_bin\SnippetDelayLoadHook.vcxproj">
+      <Project>{6952D580-0D8E-3E9D-86C3-131BAB2DA5BC}</Project>
+      <Name>SnippetDelayLoadHook</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\physx\compiler\vc16win64\sdk_snippets_bin\SnippetHelloGRB.vcxproj">
+      <Project>{4CF640E4-F2C8-35B5-891C-49D302E48C07}</Project>
+      <Name>SnippetHelloGRB</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\physx\compiler\vc16win64\sdk_snippets_bin\SnippetHelloWorld.vcxproj">
+      <Project>{06387B31-C4E3-3441-A161-7D6D820776AB}</Project>
+      <Name>SnippetHelloWorld</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\physx\compiler\vc16win64\sdk_snippets_bin\SnippetImmediateArticulation.vcxproj">
+      <Project>{DA53FE08-1DAB-3C62-B21C-0A670F6E08C2}</Project>
+      <Name>SnippetImmediateArticulation</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\physx\compiler\vc16win64\sdk_snippets_bin\SnippetImmediateMode.vcxproj">
+      <Project>{621F918B-A564-3B5E-91E7-B3D83D98749A}</Project>
+      <Name>SnippetImmediateMode</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\physx\compiler\vc16win64\sdk_snippets_bin\SnippetJoint.vcxproj">
+      <Project>{4721255E-B9A2-310D-80A0-A237F9913BAB}</Project>
+      <Name>SnippetJoint</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\physx\compiler\vc16win64\sdk_snippets_bin\SnippetLoadCollection.vcxproj">
+      <Project>{5A68F80E-AF9B-34F8-BB17-B3416B5C8B05}</Project>
+      <Name>SnippetLoadCollection</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\physx\compiler\vc16win64\sdk_snippets_bin\SnippetMBP.vcxproj">
+      <Project>{FF4F9CDA-3A03-35D1-B291-BF7DA5699078}</Project>
+      <Name>SnippetMBP</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\physx\compiler\vc16win64\sdk_snippets_bin\SnippetMultiThreading.vcxproj">
+      <Project>{7E4A6BC3-1385-38D5-AD43-CE1C1F494B56}</Project>
+      <Name>SnippetMultiThreading</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\physx\compiler\vc16win64\sdk_snippets_bin\SnippetNestedScene.vcxproj">
+      <Project>{A2420C0E-7FBE-311B-B90C-BE8F658422D6}</Project>
+      <Name>SnippetNestedScene</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\physx\compiler\vc16win64\sdk_snippets_bin\SnippetPrunerSerialization.vcxproj">
+      <Project>{455AF355-967F-39E1-8B12-6823F763D5DA}</Project>
+      <Name>SnippetPrunerSerialization</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\physx\compiler\vc16win64\sdk_snippets_bin\SnippetRaycastCCD.vcxproj">
+      <Project>{07BF6ABB-6F8C-3308-AFFD-0B4348D7D81E}</Project>
+      <Name>SnippetRaycastCCD</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\physx\compiler\vc16win64\sdk_snippets_bin\SnippetRender.vcxproj">
+      <Project>{84042797-2970-3764-A521-A02A115E3604}</Project>
+      <Name>SnippetRender</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\physx\compiler\vc16win64\sdk_snippets_bin\SnippetSerialization.vcxproj">
+      <Project>{06FA5309-CE50-392A-8A54-4AAC31840706}</Project>
+      <Name>SnippetSerialization</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\physx\compiler\vc16win64\sdk_snippets_bin\SnippetSplitFetchResults.vcxproj">
+      <Project>{8B40D86A-BBF4-3D0B-B607-2866C3D401F4}</Project>
+      <Name>SnippetSplitFetchResults</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\physx\compiler\vc16win64\sdk_snippets_bin\SnippetSplitSim.vcxproj">
+      <Project>{09B61AF2-FB1C-3D0E-9F4A-07C87F9A7184}</Project>
+      <Name>SnippetSplitSim</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\physx\compiler\vc16win64\sdk_snippets_bin\SnippetStepper.vcxproj">
+      <Project>{A9575197-07AC-395E-B43A-4E2F64F27504}</Project>
+      <Name>SnippetStepper</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\physx\compiler\vc16win64\sdk_snippets_bin\SnippetToleranceScale.vcxproj">
+      <Project>{F2959103-C54D-3A9A-8584-8EFD143774F1}</Project>
+      <Name>SnippetToleranceScale</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\physx\compiler\vc16win64\sdk_snippets_bin\SnippetTriangleMeshCreate.vcxproj">
+      <Project>{038DC81E-213A-35C1-BB31-17B018FCA251}</Project>
+      <Name>SnippetTriangleMeshCreate</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\physx\compiler\vc16win64\sdk_snippets_bin\SnippetUtils.vcxproj">
+      <Project>{53AC6B54-C973-3A15-BF74-86A34A07CA13}</Project>
+      <Name>SnippetUtils</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\physx\compiler\vc16win64\sdk_snippets_bin\SnippetVehicle4W.vcxproj">
+      <Project>{45ECD856-4B4D-34F4-97A0-1948BB8CC910}</Project>
+      <Name>SnippetVehicle4W</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\physx\compiler\vc16win64\sdk_snippets_bin\SnippetVehicleContactMod.vcxproj">
+      <Project>{B66F7AFA-8A00-3384-A3B0-0F23C7F9AFA5}</Project>
+      <Name>SnippetVehicleContactMod</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\physx\compiler\vc16win64\sdk_snippets_bin\SnippetVehicleMultiThreading.vcxproj">
+      <Project>{E915E111-EB9A-3432-9E36-1D82E134BC1C}</Project>
+      <Name>SnippetVehicleMultiThreading</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\physx\compiler\vc16win64\sdk_snippets_bin\SnippetVehicleNoDrive.vcxproj">
+      <Project>{B20C18A1-DEF6-3766-8B07-DF3531103679}</Project>
+      <Name>SnippetVehicleNoDrive</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\physx\compiler\vc16win64\sdk_snippets_bin\SnippetVehicleScale.vcxproj">
+      <Project>{B6FBA1AB-3E13-316F-A9B3-075C96D8E632}</Project>
+      <Name>SnippetVehicleScale</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="E:\Projects\Dynamik Engine\Versions\DynamikEngine\Dependencies\Libraries\External\PhysX\physx\compiler\vc16win64\sdk_snippets_bin\SnippetVehicleTank.vcxproj">
+      <Project>{92698C9F-6842-33B6-A412-3BC897BF478F}</Project>
+      <Name>SnippetVehicleTank</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
